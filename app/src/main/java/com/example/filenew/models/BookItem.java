@@ -6,10 +6,20 @@ public class BookItem {
     private String link;
     private String image;
     private String author;
-    private int price;
-    private int discount;
+    private String price;
+    private String discount;
     private String publisher;
     private String pubdate;
+    private String isbn;
+    private String description;
+
+    public String getDescription() { return description; }
+
+    public void setDescription(String description) {this.description = description; }
+
+    public String getIsbn() { return isbn; }
+
+    public void setIsbn(String isbn) {this.isbn = isbn; }
 
     public String getTitle() {
         return title;
@@ -43,19 +53,19 @@ public class BookItem {
         this.author = author;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
-    public int getDiscount() {
+    public String getDiscount() {
         return discount;
     }
 
-    public void setDiscount(int discount) {
+    public void setDiscount(String discount) {
         this.discount = discount;
     }
 
@@ -74,4 +84,5 @@ public class BookItem {
     public void setPubdate(String pubdate) {
         this.pubdate = pubdate;
     }
+    @Override public String toString() { return "Book [title=" + title + ", author=" + author  + "]"; }
 }
